@@ -7,8 +7,6 @@ Built with **Next.js, React, Prisma ORM and Tailwind CSS. Made for Dumlupinar Un
 > Status: The project has reached a “good enough” state for its original purpose.  
 > No further development is currently planned.
 
----
-
 ## ✨ Features
 
 - ⚡ Next.js App Router for modern, file-based routing
@@ -23,8 +21,6 @@ Built with **Next.js, React, Prisma ORM and Tailwind CSS. Made for Dumlupinar Un
   - Sponsors
   - Contact
 
----
-
 ## 🧰 Tech Stack
 
 - [Next.js](https://nextjs.org/)
@@ -37,7 +33,9 @@ Built with **Next.js, React, Prisma ORM and Tailwind CSS. Made for Dumlupinar Un
 - [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)  
   (currently using the **default font configuration**)
 
----
+## Database Diagram
+
+![Database Diagram](./public/screenshots/db_diagram.png)
 
 ## 🖼 Screenshots
 
