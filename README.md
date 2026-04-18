@@ -4,8 +4,7 @@ A modern web application for presenting UAV projects, vehicles, competitions, an
 
 Built with **Next.js, React, Prisma ORM and Tailwind CSS. Made for Dumlupinar University Kuasar UAV Team.**
 
-> Status: The project has reached a “good enough” state for its original purpose.  
-> No further development is currently planned.
+> Status: This project has successfully fulfilled its original goals for the Dumlupinar University Kuasar UAV Team.
 
 ## ✨ Features
 
@@ -49,7 +48,7 @@ Built with **Next.js, React, Prisma ORM and Tailwind CSS. Made for Dumlupinar Un
 
 🚀 Getting Started
 
-Even though the project is not under active development, you can still run it locally.
+You can run the project locally using the steps below.
 
 1. Clone the repository
 
@@ -128,44 +127,37 @@ Some behavior depends on configuration files:
   The project currently uses the default font configuration via next/font.
   If you want a specific font family, you will need to update that configuration.
 
-# ⚠️ Important Warnings & Limitations
+# 🛣️ Future Improvements
 
-## Please read carefully before using this project in a real environment:
+The following items can be considered as a roadmap for future development:
 
-### Account delete button is NOT active
+### Account management improvements
 
-- The account deletion button is present in the UI.
+- Connect the existing account deletion button to backend logic and safely support full account removal.
 
-- It is not wired to any backend logic.
+### Search engine visibility and SEO improvements
 
-- Do not rely on it for actual account removal.
+- Update `app/robots.ts` to allow search engines to crawl public pages.
+- Review `next.config.ts` headers and remove or scope `X-Robots-Tag` rules to admin-only routes.
+- Expand page metadata in `layout.tsx` (or `_document.tsx`) with title, description, keywords, and Open Graph fields.
+- Add an `app/sitemap.ts` file to expose core URLs for indexing.
+- Add descriptive `alt` text to all image components.
+- Keep semantic heading order (`h1` → `h2` → `h3`) and use a single `h1` per page.
+- Keep URL paths SEO friendly when introducing new routes.
+- Validate performance and mobile usability with Lighthouse, and optimize image delivery with Next.js Image Optimization.
+- Add `Schema.org` JSON-LD organization metadata in `layout.tsx`.
 
-### Search engine visibility (robots.ts)
+### Typography and visual identity
 
-- The site is not automatically configured to be fully indexable.
+- Introduce a custom typography system if a dedicated font family is preferred.
 
-- To make it discoverable via search engines,
-  you must update app/robots.ts accordingly.
+### Middleware hardening
 
-### Default font
+- Finalize `middleware.ts` configuration for authentication, protected routes, and redirect behavior.
 
-- The site uses the default font setup.
+### Multi-admin support
 
-- No custom typography system has been configured.
-
-### middleware.ts must be configured
-
-- The middleware.ts file is required for proper behavior in areas like auth or protected routes.
-
-- Review and configure it before treating this as a production-ready app.
-
-### Multiple admins are NOT supported
-
-- The current implementation only supports a single admin.
-
-- Multiple admin accounts are not supported.
-
-- Adding multi-admin support would require changes in auth logic and database schema.
+- Extend authentication and database schema to support multiple admin accounts.
 
 # 🌍 Deployment
 
@@ -188,8 +180,6 @@ For more details, refer to the Next.js deployment docs.
 # 📌 Project Status
 
 - This project was created for the Dumlupinar University Kuasar UAV Team and has fulfilled its main purpose.
-
-- No new features are planned.
 
 - The repository is kept mainly for reference, portfolio, and learning purposes.
 
